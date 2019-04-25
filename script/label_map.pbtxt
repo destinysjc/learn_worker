@@ -1,0 +1,61 @@
+item {
+  id: 69
+  display_name: "apple"
+}
+item {
+  id: 171
+  display_name: "strawberry"
+}
+item {
+  id: 3
+  display_name: "Table"
+}
+item {
+  id: 4
+  display_name: "Suit"
+}
+item {
+  id: 5
+  display_name: "Guitar"
+}
+item {
+  id: 6
+  display_name: "Dress"
+}
+item {
+  id: 7
+  display_name: "Jacket"
+}
+item {
+  id: 8
+  display_name: "Hat"
+}
+item {
+  id: 9
+  display_name: "Helmet"
+}
+item {
+  id: 10
+  display_name: "Drum"
+}
+item {
+  id: 11
+  display_name: "Camera"
+}
+item {
+  id: 12
+  display_name: "Trousers"
+}
+item {
+  id: 13
+  display_name: "Wine"
+}
+item {
+  id: 14
+  display_name: "Swimwear"
+}
+item {
+  id: 15
+  display_name: "Coat"
+}
+item {
