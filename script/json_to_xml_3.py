@@ -71,7 +71,7 @@ def write_js_xml(json_path, save_path):
                 i = 0
                 for an in json_ann:
                     print('---3 for-----')
-                    if (im['id'] == an['image_id']) and  (k == an['category_id']):
+                    if (im['id'] == an['image_id']) and  (an['category_id'] == k):
                         print('---1 if-----')
                         if i<1:
                             print('---2 if-----')
