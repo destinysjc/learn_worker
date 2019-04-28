@@ -175,13 +175,12 @@ def solve(json_path, saved_xml_folder):
 
 
 def copy_file(xml_path, img_path, new_path):
-	xml_n, xml_p = get_file_name_path(xml_path)
-	jpg_n, jpg_p = get_file_name_path(img_path)
+	xml_n, xml_p = get_file_name_path(xml_path, '.xml')
+	jpg_n, jpg_p = get_file_name_path(img_path, '.jpg')
 
 	for jp in jpg_p:
-
 		jp_name = re.split('/', jp)
-		jp_name = f_name[-1][:-4] + '.xml'
+		jp_name = jp_name[-1][:-4] + '.xml'
 
 		if jp_name in xml_n:
 			shutil.copy2(jp, new_path)
@@ -192,17 +191,16 @@ def copy_file(xml_path, img_path, new_path):
 
 #################################
 if __name__ == '__main__':
-	control == 1
-
+    c = 1
     json_path = "../tmp/object365/train.json"
     saved_xml_folder = "../tmp/object365/use_data/train/annotation/"
 
     img_path = "../tmp/object365/images/Part/"
     save_img_path = "../tmp/object365/use_data/train/images/"
-	if control == 0: 
-    	solve(json_path, saved_xml_folder)
-	else:
-		copy_file(saved_xml_folder, img_path, save_img_path)
+    if c == 0: 
+        solve(json_path, saved_xml_folder)
+    else:
+        copy_file(saved_xml_folder, img_path, save_img_path)
 		
 
 
