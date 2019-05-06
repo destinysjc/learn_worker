@@ -44,6 +44,7 @@ def remove_file(file_path, keys):
         if '正常' in fp:
             shutil.rmtree(fp)
 
+if __name__ == "__main__":
+    
 
-
-remove_node(r'C:\Users\Administrator\Desktop\learn_worker\Tmp\object365\000001.xml', 'object')
+    remove_node(r'C:\Users\Administrator\Desktop\learn_worker\Tmp\object365\000001.xml', 'object')
