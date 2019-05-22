@@ -18,7 +18,7 @@ def save_img():
         else:
             rval = False
  
-        timeF = 30  
+        timeF = 36  
  
         while rval: # xun huan read video 
             rval, frame = vc.read()
