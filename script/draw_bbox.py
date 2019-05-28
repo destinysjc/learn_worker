@@ -36,8 +36,8 @@ def read_file(file_path):
 def draw_box(f_info, file_path):
     f_info = np.array(f_info)
     f_path = f_info[0][0]
-    length = float(f_info[0][1])
-    wide = float(f_info[0][2])
+    wide = float(f_info[0][1])
+    length = float(f_info[0][2])
     depth = f_info[0][3]
     
     print(f_info.shape)
@@ -61,7 +61,7 @@ def draw_box(f_info, file_path):
             cv2.putText(img, label, (xmin-2, ymax-1), font, 1, (3,3,255), 1)
             #cv2.putText(img, text, (212, 310), 2, (55,0,255), 1)
             cv2.imwrite(jpg_path, img)
-            print(jpg_path)
+            print("Save Path:", jpg_path)
 
 
     

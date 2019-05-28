@@ -2,7 +2,7 @@ import cv2
 import os
 def save_img():
     #video_path = r'D:\python3-PycharmProjects1\video2picture\20180911-12-48-31\data\123/'
-    video_path = "/home-ex/tclsz/liqiming/data/videos/cat/" 
+    video_path = "/home-ex/tclitc/miniconda3/envs/tensorflow-axj/axjWorkspace/Tmp/strawberry/" 
     videos = os.listdir(video_path)
     print(videos)
     for video_name in videos:
@@ -18,14 +18,15 @@ def save_img():
         else:
             rval = False
  
-        timeF = 36  
+        timeF = 12  
  
         while rval: # xun huan read video 
             rval, frame = vc.read()
             pic_path = folder_name + '/'
             if (c % timeF == 0):  # mei ge timeF zhen jin xing cun cu
-                cv2.imwrite(pic_path + file_name + '_' + str(c) + '.jpg', frame)  # save as image, the name is foldername_number(di ji ge wen jian).jpg
-                #print(pic_path + file_name + '_' + str(c) + '.jpg')  # save as image, the name is foldername_number(di ji ge wen jian).jpg
+                cv2.imwrite(pic_path + file_name + '_' + str(c) + '_' + 'strawberry' + '.jpg', frame)  # save as image, the name is foldername_number(di ji ge wen jian).jpg
+                #cv2.imwrite(pic_path + file_name + '_' + str(c) + '.jpg', frame)
+                print(pic_path + file_name + '_' + str(c) + '_' + 'strawberry' + '.jpg')  # save as image, the name is foldername_number(di ji ge wen jian).jpg
             c = c + 1
             cv2.waitKey(1)
         vc.release()
