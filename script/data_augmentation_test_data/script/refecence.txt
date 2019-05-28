@@ -1,0 +1,8 @@
+读pkl文件 bboxes = pkl.load(open(pkl_path, "rb"))
+写pkl文件 
+
+
+data = np.reshape(np.array(temp),(count,5))
+#print(data)
+with open(pkl_path,'wb') as pkl_file:
+	pickle.dump(data, pkl_file, pickle.HIGHEST_PROTOCOL)
